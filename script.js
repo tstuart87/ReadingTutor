@@ -128,7 +128,7 @@ resetButton.addEventListener("click", function () {
 
 //READ ALOUND HIGHLIGHTED TEXT
 readAloundButton.addEventListener("click", () => {
-  const selection = window.getSelection().toString().trim();
+  const selection = left.innerHTML;
   if (selection !== "") {
     const speech = new SpeechSynthesisUtterance(selection);
     speech.lang = "en-US";
@@ -145,7 +145,7 @@ readAloundButton.addEventListener("click", () => {
 });
 
 readAloundButtonSlow.addEventListener("click", () => {
-  const selection = window.getSelection().toString().trim();
+  const selection = left.innerHTML;
   if (selection !== "") {
     const speech = new SpeechSynthesisUtterance(selection);
     speech.lang = "en-US";
@@ -162,7 +162,7 @@ readAloundButtonSlow.addEventListener("click", () => {
 });
 
 readAloundButtonFast.addEventListener("click", () => {
-  const selection = window.getSelection().toString().trim();
+  const selection = left.innerHTML;
   if (selection !== "") {
     const speech = new SpeechSynthesisUtterance(selection);
     speech.lang = "en-US";
